@@ -12,3 +12,11 @@ stages:
     - one.txt
     outs:
     - two.txt
+  three:
+    cmd: python stage_03.py
+    deps:
+    - stage_03.py
+    - one.txt
+    - two.txt
+    outs:
+    - three.txt
